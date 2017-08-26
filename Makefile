@@ -1,6 +1,5 @@
 main:
-	g++ -std=c++1y -lboost_system -lpthread test.cpp
+	g++ test.cpp -std=c++1y -lboost_system -lpthread 
 
 info:
 	g++ --version
-	dpkg -s libboost-all-dev
