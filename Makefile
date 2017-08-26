@@ -1,5 +1,6 @@
-main:
-	g++ test.cpp -std=c++1y -lboost_system -lpthread 
+CC=g++
+CFLAGS=-lboost_system -lpthread
+CVER=-std=c++1y
 
-info:
-	g++ --version
+main:
+	g++ test.cpp $(CVER) $(CFLAGS) house20.out
