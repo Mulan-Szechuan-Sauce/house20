@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-lboost_system -lpthread
+CFLAGS=-Wl,-Bstatic -lboost_system -Wl,-Bdynamic -lpthread
 CVER=-std=c++1y
 
 main:
