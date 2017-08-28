@@ -1,6 +1,7 @@
 CC=g++
-CFLAGS=-Wl,-Bstatic -lboost_system -Wl,-Bdynamic -lpthread
+CFLAGS=-g -Wall
+CLINKS=-static-libstdc++ -Wl,-Bstatic -lboost_system -Wl,-Bdynamic -lpthread
 CVER=-std=c++1y
 
 main:
-	g++ test.cpp $(CVER) $(CFLAGS) -o house20.out
+	g++ $(CFLAGS) test.cpp $(CVER) $(CLINKS) -o house20.out
