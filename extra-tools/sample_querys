@@ -1,0 +1,6 @@
+GET http://localhost:1337/api/v1.0/recent/
+
+{
+        "josh": ["192.168.0.110", "killme.cum"],
+        "eli": ["killme.cum"]
+}
